@@ -264,16 +264,16 @@ var moneys = true;
 
 Правилно:
 ```js
-function doSomething(){
-    var onAwesomeClick = function(){
-        var doSomethingWithPerson = function(){
+function doSomething() {
+    var onAwesomeClick = function() {
+        var doSomethingWithPerson = function() {
             //
         }
     
         $(this).find('.person').each(doSomethingWithPerson);
     }
-    $('.stuff').each(function(){
-        $('#awesome').on('click', onAwesomeClick);
+    $(".stuff").each(function(){
+        $("#awesome").on('click', onAwesomeClick);
     });
 }
 ```
